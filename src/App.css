@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Minimalist faint dot background pattern */
+.dotted-bg {
+  background-color: white;
+  background-image: radial-gradient(rgba(0,0,0,0.06) 1.2px, transparent 1.2px);
+  background-size: 28px 28px;
+}
+.dark .dotted-bg {
+  background-color: black;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.034) 1.2px, transparent 1.2px);
+  background-size: 100% 100%;
+} 
